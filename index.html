@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BTCPoker | $20-$50/hr Private Coaching</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Bebas+Neue&display=swap');
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: url('https://images.unsplash.com/photo-1544511912-4a7f9c9f9d2d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat fixed,
+                  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat fixed,
+                  #0a001a;
+      color: #ffd700;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(10, 5, 30, 0.95);
+      padding: 60px 30px;
+      border-radius: 25px;
+      box-shadow: 0 0 60px rgba(255, 215, 0, 0.8), inset 0 0 40px rgba(255,0,0,0.4);
+      max-width: 1100px;
+      border: 5px solid #ffd700;
+      position: relative;
+      overflow: hidden;
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,215,0,0.03) 35px, rgba(255,215,0,0.03) 70px);
+      animation: shine 15s linear infinite;
+    }
+    @keyframes shine { 0% { transform: translate(0,0); } 100% { transform: translate(50%,50%); } }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 7rem;
+      margin: 0 0 10px;
+      text-shadow: 0 0 40px #ff0000, 0 0 80px #ffd700;
+      letter-spacing: 8px;
+    }
+    .tagline { font-size: 2.5rem; margin: 15px 0 50px; text-shadow: 0 0 20px #ffd700; }
+
+    .levels {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 60px 0;
+    }
+    .level {
+      background: linear-gradient(135deg, #1a001a, #000);
+      padding: 40px 30px;
+      border-radius: 20px;
+      width: 320px;
+      border: 4px solid #ffd700;
+      box-shadow: 0 0 40px rgba(255,215,0,0.7);
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+    .level:hover {
+      transform: translateY(-25px) scale(1.08);
+      box-shadow: 0 0 80px #ffd700, 0 0 100px #ff0000;
+    }
+    .price {
+      font-size: 5rem;
+      color: #ffd700;
+      font-weight: bold;
+      margin: 20px 0;
+      text-shadow: 0 0 20px #ff0000;
+    }
+    .discord-btn {
+      background: #5865F2;
+      color: white;
+      padding: 20px 50px;
+      font-size: 2.5rem;
+      border-radius: 15px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 60px 0 30px;
+      box-shadow: 0 0 40px #5865F2;
+      transition: all 0.3s;
+    }
+    .discord-btn:hover { background: #7289da; transform: scale(1.1); }
+
+    footer { margin-top: 50px; font-size: 1.5rem; opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BTCPoker</h1>
+    <p class="tagline">Private 1-on-1 Coaching with a Real Crusher</p>
+
+    <div class="levels">
+
+      <div class="level">
+        <h3 style="font-size:3.5rem;margin:0;">BEGINNER</h3>
+        <div class="price">$20/hr</div>
+        <p style="font-size:1.8rem;">Perfect if you're just starting</p>
+        <a href="https://discord.gg/2bAhrTqw" target="_blank" style="background:#5865F2;padding:18px 40px;font-size:2rem;border-radius:12px;color:white;text-decoration:none;display:inline-block;margin-top:15px;box-shadow:0 0 30px #5865F2;">JOIN DISCORD & BOOK →</a>
+      </div>
+
+      <div class="level">
+        <h3 style="font-size:3.5rem;margin:0;">INTERMEDIATE</h3>
+        <div class="price">$30/hr</div>
+        <p style="font-size:1.8rem;">Start beating regulars</p>
+        <a href="https://discord.gg/2bAhrTqw" target="_blank" style="background:#5865F2;padding:18px 40px;font-size:2rem;border-radius:12px;color:white;text-decoration:none;display:inline-block;margin-top:15px;box-shadow:0 0 30px #5865F2;">JOIN DISCORD & BOOK →</a>
+      </div>
+
+      <div class="level">
+        <h3 style="font-size:3.5rem;margin:0;">ADVANCED/PRO</h3>
+        <div class="price">$50/hr</div>
+        <p style="font-size:1.8rem;">GTO • Solvers • Crushing</p>
+        <a href="https://discord.gg/2bAhrTqw" target="_blank" style="background:#5865F2;padding:18px 40px;font-size:2rem;border-radius:12px;color:white;text-decoration:none;display:inline-block;margin-top:15px;box-shadow:0 0 30px #5865F2;">JOIN DISCORD & BOOK →</a>
+      </div>
+
+    </div>
+
+    <p style="font-size:2.5rem;margin:50px 0;">
+      Baccarat & Blackjack = $20/hr — just DM me!
+    </p>
+
+    <a href="https://discord.gg/2bAhrTqw" target="_blank" class="discord-btn">
+      JOIN BTCPoker DISCORD SERVER NOW
+    </a>
+
+    <footer>
+      Click ANY button above → Join the server → DM me to book your lesson<br>
+      Pay with BTC • Cash App • Venmo • Zelle • PayPal • First paid = first served
+    </footer>
+  </div>
+</body>
+</html>
