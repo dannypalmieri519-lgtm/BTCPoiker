@@ -3,126 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BTCPoker | $20-$50/hr Private Coaching + $10 eBook</title>
+  <title>BTCPoker | $20-$50/hr Coaching + $10 eBook + Tips</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Bebas+Neue&display=swap');
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: url('https://images.unsplash.com/photo-1544511912-4a7f9c9f9d2d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat fixed,
-                  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover no-repeat fixed,
-                  #0a001a;
-      color: #ffd700;
-      font-family: 'Bebas Neue', cursive;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      background: rgba(10, 5, 30, 0.95);
-      padding: 60px 30px;
-      border-radius: 25px;
-      box-shadow: 0 0 60px rgba(255, 215, 0, 0.8), inset 0 0 40px rgba(255,0,0,0.4);
-      max-width: 1100px;
-      border: 5px solid #ffd700;
-      position: relative;
-      overflow: hidden;
-    }
-    h1 { font-family: 'Orbitron', sans-serif; font-size: 7rem; margin: 0 0 10px; text-shadow: 0 0 40px #ff0000, 0 0 80px #ffd700; letter-spacing: 8px; }
-    .tagline { font-size: 2.5rem; margin: 15px 0 50px; text-shadow: 0 0 20px #ffd700; }
+    body{margin:0;min-height:100vh;background:url('https://images.unsplash.com/photo-1544511912-4a7f9c9f9d2d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')center/cover fixed,url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')center/cover fixed,#0a001a;color:#ffd700;font-family:'Bebas Neue',cursive;text-align:center;display:flex;align-items:center;justify-content:center;}
+    .container{background:rgba(10,5,30,0.95);padding:60px 30px;border-radius:25px;box-shadow:0 0 60px rgba(255,215,0,0.8),inset 0 0 40px rgba(255,0,0,0.4);max-width:1100px;border:5px solid #ffd700;overflow:hidden;}
+    h1{font-family:'Orbitron',sans-serif;font-size:7rem;margin:0 0 10px;text-shadow:0 0 40px #ff0000,0 0 80px #ffd700;letter-spacing:8px;}
+    .tagline{font-size:2.5rem;margin:15px 0 50px;text-shadow:0 0 20px #ffd700;}
+    .levels{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin:60px 0;}
+    .level{background:linear-gradient(135deg,#1a001a,#000);padding:40px 30px;border-radius:20px;width:320px;border:4px solid #ffd700;box-shadow:0 0 40px rgba(255,215,0,0.7);transition:all .4s;cursor:pointer;}
+    .level:hover{transform:translateY(-25px) scale(1.08);box-shadow:0 0 80px #ffd700,0 0 100px #ff0000;}
+    .price{font-size:5rem;color:#ffd700;font-weight:bold;margin:20px 0;text-shadow:0 0 20px #ff0000;}
+    .btn{background:#5865F2;color:white;padding:20px 50px;font-size:2.5rem;border-radius:15px;text-decoration:none;display:inline-block;margin:30px 0 10px;box-shadow:0 0 40px #5865F2;transition:all .3s;}
+    .ebook{background:#ff0066;box-shadow:0 0 50px #ff0066;border:4px solid #ffd700;}
+    .yt{background:#c70000;box-shadow:0 0 60px #ff0000;border:6px solid #ffd700;animation:glow 2s infinite alternate;}
+    footer{margin-top:50px;font-size:1.5rem;opacity:0.9;}
 
-    .levels { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin: 60px 0; }
-    .level { background: linear-gradient(135deg, #1a001a, #000); padding: 40px 30px; border-radius: 20px; width: 320px; border: 4px solid #ffd700; box-shadow: 0 0 40px rgba(255,215,0,0.7); transition: all 0.4s; cursor: pointer; }
-    .level:hover { transform: translateY(-25px) scale(1.08); box-shadow: 0 0 80px #ffd700, 0 0 100px #ff0000; }
-    .price { font-size: 5rem; color: #ffd700; font-weight: bold; margin: 20px 0; text-shadow: 0 0 20px #ff0000; }
+    /* TIP JAR */
+    .tipjar{background:rgba(0,0,0,0.8);padding:50px;border:5px solid #ffd700;border-radius:25px;box-shadow:0 0 80px #ffd700;margin:60px auto;max-width:1000px;}
+    .tipbtn{display:inline-block;margin:15px;padding:20px 40px;font-size:2.2rem;border-radius:15px;color:white;text-decoration:none;min-width:200px;}
+    .paypal{background:#0070ba;box-shadow:0 0 40px #0070ba;}
+    .cashapp{background:#00d632;box-shadow:0 0 40px #00d632;}
+    .zelle{background:#6b00b3;box-shadow:0 0 40px #6b00b3;}
+    .btc{background:#f7931a;box-shadow:0 0 40px #f7931a;}
 
-    .discord-btn, .ebook-btn, .yt-btn {
-      background: #5865F2; color: white; padding: 20px 50px; font-size: 2.5rem; border-radius: 15px;
-      text-decoration: none; display: inline-block; margin: 60px 0 30px; box-shadow: 0 0 40px #5865F2;
-      transition: all 0.3s; font-family:'Bebas Neue',cursive; letter-spacing:2px;
-    }
-    .ebook-btn { background:#ff0066; box-shadow:0 0 50px #ff0066; border:4px solid #ffd700; }
-    .yt-btn { background:#c70000; box-shadow:0 0 60px #ff0000; border:6px solid #ffd700; animation:glow 2s infinite alternate; }
-
-    footer { margin-top: 50px; font-size: 1.5rem; opacity: 0.9; }
-
-    @keyframes glow {
-      from { box-shadow:0 0 50px #ff0000, 0 0 80px #ffd700; }
-      to   { box-shadow:0 0 70px #ff0000, 0 0 120px #ffd700; }
-    }
+    @keyframes glow{from{box-shadow:0 0 50px #ff0000,0 0 80px #ffd700;}to{box-shadow:0 0 70px #ff0000,0 0 120px #ffd700;}}
   </style>
 </head>
 <body>
   <div class="container">
     <h1>BTCPoker</h1>
-    <p class="tagline">Private 1-on-1 Coaching with a Real Crusher</p>
+    <p class="tagline">Private 1-on-1 Coaching • $10 eBook • Live Big Plays</p>
 
     <div class="levels">
-      <div class="level">
-        <h3 style="font-size:3.5rem;margin:0;">BEGINNER</h3>
-        <div class="price">$20/hr</div>
-        <p style="font-size:1.8rem;">Just starting out</p>
-        <a href="https://discord.gg/2bAhrTqw" target="_blank" class="discord-btn">JOIN DISCORD & BOOK</a>
-      </div>
-
-      <div class="level">
-        <h3 style="font-size:3.5rem;margin:0;">INTERMEDIATE</h3>
-        <div class="price">$30/hr</div>
-        <p style="font-size:1.8rem;">Start beating regulars</p>
-        <a href="https://discord.gg/2bAhrTqw" target="_blank" class="discord-btn">JOIN DISCORD & BOOK</a>
-      </div>
-
-      <div class="level">
-        <h3 style="font-size:3.5rem;margin:0;">ADVANCED/PRO</h3>
-        <div class="price">$50/hr</div>
-        <p style="font-size:1.8rem;">GTO • Solvers • Crushing</p>
-        <a href="https://discord.gg/2bAhrTqw" target="_blank" class="discord-btn">JOIN DISCORD & BOOK</a>
-      </div>
+      <div class="level"><h3 style="font-size:3.5rem;margin:0;">BEGINNER</h3><div class="price">$20/hr</div><p style="font-size:1.8rem;">Just starting out</p><a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN DISCORD & BOOK</a></div>
+      <div class="level"><h3 style="font-size:3.5rem;margin:0;">INTERMEDIATE</h3><div class="price">$30/hr</div><p style="font-size:1.8rem;">Beat regulars</p><a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN DISCORD & BOOK</a></div>
+      <div class="level"><h3 style="font-size:3.5rem;margin:0;">ADVANCED/PRO</h3><div class="price">$50/hr</div><p style="font-size:1.8rem;">GTO • Solvers • Crushing</p><a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN DISCORD & BOOK</a></div>
     </div>
 
-    <p style="font-size:2.5rem;margin:50px 0;">
-      Baccarat & Blackjack = $20/hr — just DM me!
-    </p>
+    <p style="font-size:2.5rem;margin:50px 0;">Baccarat & Blackjack = $20/hr — just DM me!</p>
 
-    <!-- E-BOOK BUTTON -->
-    <div style="text-align:center;">
-      <a href="https://dannypalmieri.gumroad.com/l/qndhcg" target="_blank" class="ebook-btn">
-        BUY THE POKER E-BOOK NOW → $10
-      </a>
-      <p style="font-size:2.2rem;margin:20px 0;color:#ffd700;">
-        Instant download • Pay with card or BTC • Start crushing tonight
-      </p>
+    <!-- E-BOOK -->
+    <a href="https://dannypalmieri.gumroad.com/l/qndhcg" target="_blank" class="ebook btn">BUY THE POKER E-BOOK → $10</a>
+    <p style="font-size:2.2rem;color:#ffd700;">Instant download • Card or BTC</p>
+
+    <!-- $2000 ROULETTE YOUTUBE -->
+    <div style="padding:40px;background:rgba(0,0,0,0.7);border:5px solid #ffd700;border-radius:25px;box-shadow:0 0 60px #ff0000,0 0 80px #ffd700;margin:60px auto;max-width:900px;">
+      <p style="font-size:4.5rem;margin:0;color:#ffd700;text-shadow:0 0 30px #ff0000;letter-spacing:4px;">$2,000 ON RED LIVE!</p>
+      <p style="font-size:3rem;margin:15px 0 30px;color:#fff;">Watch me go all-in right now</p>
+      <a href="https://youtu.be/JunIDbzPKbI" target="_blank" class="yt btn">WATCH THE $2,000 SPIN</a>
+      <p style="font-size:2.8rem;margin:30px 0 10px;color:#ffd700;">Smash SUBSCRIBE while you watch!</p>
     </div>
 
-    <!-- $2,000 ROULETTE YOUTUBE SECTION -->
-    <div style="text-align:center; padding:40px; background:rgba(0,0,0,0.7); border:5px solid #ffd700; border-radius:25px; box-shadow:0 0 60px #ff0000, 0 0 80px #ffd700; max-width:900px; margin:50px auto;">
-      <p style="font-size:4.5rem; margin:0; color:#ffd700; text-shadow:0 0 30px #ff0000; letter-spacing:4px;">
-        $2,000 ON RED LIVE!
-      </p>
-      <p style="font-size:3rem; margin:15px 0 30px; color:#fff;">
-        Watch me go all-in on roulette RIGHT NOW
-      </p>
-      <a href="https://youtu.be/JunIDbzPKbI" target="_blank" class="yt-btn">
-        WATCH THE $2,000 SPIN NOW
-      </a>
-      <p style="font-size:2.8rem; margin:30px 0 10px; color:#ffd700;">
-        Smash that SUBSCRIBE button while you watch!
-      </p>
-      <a href="https://www.youtube.com/@YOURCHANNEL?sub_confirmation=1" target="_blank"
-         style="background:#FF0000;color:white;padding:18px 50px;font-size:2.4rem;border-radius:15px;text-decoration:none;">
-        DIRECT SUBSCRIBE LINK
-      </a>
+    <!-- TIP JAR – ALL YOUR METHODS -->
+    <div class="tipjar">
+      <p style="font-size:4.5rem;margin:0;color:#ffd700;text-shadow:0 0 30px #ff0000;">SUPPORT THE GRIND – TIP JAR</p>
+      <p style="font-size:2.6rem;color:#fff;margin:20px 0;">Love the plays? Throw some chips my way — every dollar goes to bigger action!</p>
+
+      <a href="https://www.paypal.me/dannyp519" target="_blank" class="tipbtn paypal">PayPal</a>
+      <a href="https://cash.app/$BTCPoker" target="_blank" class="tipbtn cashapp">Cash App $BTCPoker</a>
+      <a href="mailto:dannypalmieri519@gmail.com?subject=Zelle/Apple%20Cash%20Tip" class="tipbtn zelle">Zelle / Apple Cash<br>646-260-2946</a>
+      <a href="bitcoin:bc1q7a75vkqkcwqh7muvdy88dc4fwljm804kq3zdc7" class="tipbtn btc">Bitcoin</a>
     </div>
 
-    <a href="https://discord.gg/2bAhrTqw" target="_blank" class="discord-btn">
-      JOIN BTCPoker DISCORD SERVER NOW
-    </a>
+    <a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN BTCPoker DISCORD SERVER</a>
 
     <footer>
-      Click any button → Join the server → DM me to book your lesson<br>
-      Pay with BTC • Cash App • Venmo • Zelle • PayPal • First paid = first served
+      Click any button → Join the server → DM me to book<br>
+      Pay with BTC • Cash App • Venmo • Zelle • PayPal • Apple Cash • First paid = first served
     </footer>
   </div>
 </body>
