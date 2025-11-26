@@ -1,2 +1,2 @@
-# BTCPoiker
+# BTCPoker
 BTCPoker Coaching site
