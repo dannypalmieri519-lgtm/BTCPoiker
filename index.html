@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BTCPoker | Poker Club & Last Longer Bets</title>
+  <title>BTCPoker Club</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Bebas+Neue&display=swap');
 
     body {
       margin: 0;
       min-height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.stockcake.com/public/8/b/e/8be44e87-3071-436b-b156-b43b43be3439_large/poker-night-intensity-stockcake.jpg') center/cover no-repeat fixed;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://img.freepik.com/premium-photo/luxurious-private-poker-room-with-rich-wood-paneling-elegant-seating_1034924-43772.jpg') center/cover no-repeat fixed;
       color: #ffd700;
       font-family: 'Bebas Neue', cursive;
       text-align: center;
@@ -19,96 +19,105 @@
       justify-content: center;
     }
     .container {
-      background: rgba(10, 5, 30, 0.85);
-      padding: 50px 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 50px rgba(255, 215, 0, 0.7), inset 0 0 30px rgba(0, 0, 0, 0.5);
-      max-width: 900px;
-      border: 4px solid #ffd700;
-      position: relative;
-      overflow: hidden;
+      background: rgba(15, 10, 5, 0.9);
+      padding: 60px 40px;
+      border-radius: 25px;
+      box-shadow: 0 0 80px rgba(255,215,0,0.7);
+      max-width: 950px;
+      border: 5px solid #ffd700;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 6rem;
+      font-size: 6.5rem;
       margin: 0 0 20px;
-      text-shadow: 0 0 30px #ff0000, 0 0 60px #ffd700;
-      letter-spacing: 6px;
+      text-shadow: 0 0 40px #ff0000, 0 0 70px #ffd700;
+      letter-spacing: 7px;
     }
-    p { font-size: 2rem; margin: 20px 0; text-shadow: 0 0 10px #ffd700; }
+    .subtitle { font-size: 2.8rem; margin: 20px 0 50px; opacity: 0.9; }
     .btn {
-      background: #ff0000;
+      background: #c70000;
       color: white;
-      padding: 15px 40px;
-      font-size: 2.5rem;
-      border-radius: 15px;
+      padding: 20px 60px;
+      font-size: 2.8rem;
+      border-radius: 18px;
       text-decoration: none;
       display: inline-block;
-      margin: 30px 0;
-      box-shadow: 0 0 30px #ff0000;
-      transition: all 0.3s;
-      border: 3px solid #ffd700;
+      margin: 40px 0;
+      box-shadow: 0 0 50px #ff0000;
+      border: 4px solid #ffd700;
+      transition: transform 0.3s;
     }
-    .btn:hover { transform: scale(1.05); box-shadow: 0 0 50px #ff0000; }
-    .subscribe-btn { background: #FF0000; box-shadow: 0 0 30px #FF0000; }
-    .tipjar { background: rgba(0,0,0,0.8); padding: 40px; border: 4px solid #ffd700; border-radius: 20px; margin: 50px 0; }
-    .tipbtn { display: inline-block; margin: 10px; padding: 15px 30px; font-size: 2rem; border-radius: 10px; color: white; text-decoration: none; }
-    .paypal { background: #0070ba; box-shadow: 0 0 20px #0070ba; }
-    .cashapp { background: #00d632; box-shadow: 0 0 20px #00d632; }
-    .zelle { background: #6b00b3; box-shadow: 0 0 20px #6b00b3; }
-    .btc { background: #f7931a; box-shadow: 0 0 20px #f7931a; }
-    table { width: 100%; margin: 30px 0; border-collapse: collapse; }
-    th, td { padding: 15px; border: 2px solid #ffd700; font-size: 1.8rem; }
-    th { background: rgba(0,0,0,0.8); color: #ffd700; }
-    td { background: rgba(0,0,0,0.6); }
-    footer { margin-top: 50px; font-size: 1.6rem; opacity: 0.9; }
+    .btn:hover { transform: scale(1.05); }
+    .subscribe-btn { background: #FF0000; box-shadow: 0 0 50px #FF0000; }
+    .section {
+      background: rgba(0,0,0,0.7);
+      padding: 50px;
+      border: 4px solid #ffd700;
+      border-radius: 25px;
+      margin: 60px 0;
+    }
+    table { width: 85%; margin: 40px auto; border-collapse: collapse; }
+    th, td { padding: 20px; border: 3px solid #ffd700; font-size: 2rem; }
+    th { background: rgba(0,0,0,0.8); }
+    td { background: rgba(0,0,0,0.5); }
+    .tipjar { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+    .tipbtn {
+      background: #333; color: white; padding: 18px 40px; font-size: 2rem; border-radius: 15px;
+      text-decoration: none; min-width: 220px; box-shadow: 0 0 30px #ffd700;
+    }
+    .paypal { background: #0070ba; }
+    .venmo { background: #3d95ce; }
+    .cashapp { background: #00d632; }
+    .zelle { background: #6b00b3; }
+    .btc { background: #f7931a; }
+    footer { margin-top: 60px; font-size: 1.8rem; opacity: 0.9; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>BTCPoker</h1>
-    <p>The Cozy Poker Club for Real Players – Join the Action!</p>
+    <h1>BTCPoker Club</h1>
+    <p class="subtitle">The Premier Private Poker Club – Legit Games, Real Action</p>
 
     <!-- $2000 ON RED -->
-    <a href="https://youtu.be/JunIDbzPKbI" target="_blank" class="btn">WATCH $2000 ON RED – HIGH STAKES ROULETTE</a>
+    <a href="https://youtu.be/JunIDbzPKbI" target="_blank" class="btn">WATCH $2,000 ON RED – LIVE ROULETTE</a>
 
     <!-- YOUTUBE SUBSCRIBE -->
-    <a href="https://www.youtube.com/channel/UCOW1XggOKlPBBArvwPN0CcA?sub_confirmation=1" target="_blank" class="btn subscribe-btn">SUBSCRIBE TO MY YOUTUBE CHANNEL – BRONXHUSTLA519</a>
-    <p>Get the latest poker tips, live sessions, and club updates!</p>
+    <a href="https://www.youtube.com/@Bronxhustla519?sub_confirmation=1" target="_blank" class="btn subscribe-btn">SUBSCRIBE TO YOUTUBE – BRONXHUSTLA519</a>
+    <p style="font-size:2.4rem;margin:30px 0;">Live plays, big bets, and club updates every week!</p>
 
-    <!-- LAST LONGER BET SIGN UP LIST -->
-    <div style="background: rgba(0,0,0,0.8); padding: 40px; border: 4px solid #ffd700; border-radius: 20px; margin: 50px 0;">
-      <p style="font-size: 4rem; margin: 0 0 20px; color: #ffd700; text-shadow: 0 0 30px #ff0000;">LAST LONGER BET TOURNAMENT SIGN UP</p>
-      <p style="font-size: 2.2rem; margin: 0 0 30px;">$10 Fee for First Entry – Pay via Bitcoin or Tip Jar Below<br>Be familiar with Bitcoin to join. Club: BTCPoker</p>
+    <!-- LAST LONGER BET SIGN-UP -->
+    <div class="section">
+      <p style="font-size:4.5rem;margin:0 0 30px;">LAST LONGER BET TOURNAMENT</p>
+      <p style="font-size:2.4rem;margin:0 0 40px;">$10 One-Time Fee → Private Paid Discord Lobby + Entry to First Tournament</p>
       <table>
-        <tr>
-          <th>Username</th>
-          <th>Status</th>
-        </tr>
-        <tr><td>AceHighKing</td><td>Paid & Entered</td></tr>
-        <tr><td>RiverRat42</td><td>Paid & Entered</td></tr>
-        <tr><td>FlushDrawPro</td><td>Paid & Entered</td></tr>
-        <tr><td>BluffMaster99</td><td>Paid & Entered</td></tr>
-        <tr><td>[Your Username]</td><td>Pending – Sign Up Below</td></tr>
+        <tr><th>Username</th><th>Status</th></tr>
+        <tr><td>AceCrusherNYC</td><td>Paid – Private Lobby</td></tr>
+        <tr><td>RiverKing718</td><td>Paid – Private Lobby</td></tr>
+        <tr><td>FlushQueenBX</td><td>Paid – Private Lobby</td></tr>
+        <tr><td>BluffMaster519</td><td>Paid – Private Lobby</td></tr>
+        <tr><td>[Your Username Here]</td><td>Available – Sign Up Below</td></tr>
       </table>
-      <a href="mailto:btcpoker@duck.com?subject=BTCPoker Last Longer Sign Up&body=My Username: [Your Username]%0A%0AI have paid the $10 fee (TXID or confirmation): [Paste Here]%0A%0AEmail sent and pending entry to the club group chat. [Check Box: Yes]" class="btn">SIGN UP – EMAIL BTCPoker@duck.com</a>
-      <p style="font-size: 1.8rem; margin-top: 20px;">Click above to email and sign up. Include your payment confirmation. Check the box in the email for group chat entry.</p>
+      <p style="font-size:2.2rem;margin:30px 0;">Pay $10 via Tip Jar below → Email btcpoker@duck.com with payment proof & username for private lobby access</p>
     </div>
 
     <!-- TIP JAR -->
-    <div style="background: rgba(0,0,0,0.8); padding: 40px; border: 4px solid #ffd700; border-radius: 20px; margin: 50px 0;">
-      <p style="font-size: 4rem; margin: 0 0 20px; color: #ffd700; text-shadow: 0 0 30px #ff0000;">TIP JAR – SUPPORT THE CLUB</p>
-      <a href="https://www.paypal.me/dannyp519" target="_blank" class="tipbtn paypal">PayPal</a>
-      <a href="https://cash.app/$BTCPoker" target="_blank" class="tipbtn cashapp">Cash App $BTCPoker</a>
-      <a href="mailto:dannypalmieri519@gmail.com?subject=Zelle/Apple%20Tip" class="tipbtn zelle">Zelle / Apple Cash 646-260-2946</a>
-      <a href="bitcoin:bc1q7a75vkqkcwqh7muvdy88dc4fwljm804kq3zdc7" class="tipbtn btc">Bitcoin</a>
+    <div class="section">
+      <p style="font-size:4rem;margin:0 0 30px;">TIP JAR / $10 LAST LONGER FEE</p>
+      <div class="tipjar">
+        <a href="https://www.paypal.me/dannyp519" target="_blank" class="tipbtn paypal">PayPal</a>
+        <a href="https://venmo.com/dannyp519" target="_blank" class="tipbtn venmo">Venmo @dannyp519</a>
+        <a href="https://cash.app/$BTCPoker" target="_blank" class="tipbtn cashapp">Cash App $BTCPoker</a>
+        <a href="mailto:dannypalmieri519@gmail.com?subject=Zelle/Apple Cash" target="_blank" class="tipbtn zelle">Zelle / Apple Cash<br>646-260-2946</a>
+        <a href="https://blockstream.info/address/bc1qpf9wja98lrp79kdfga9rjq045fhkzks9skm7f7" target="_blank" class="tipbtn btc">Bitcoin<br>bc1qpf9wja98lrp79kdfga9rjq045fhkzks9skm7f7</a>
+      </div>
     </div>
 
-    <a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN BTCPoker DISCORD SERVER</a>
+    <!-- DISCORD (PUBLIC FOR FREE VISITORS) -->
+    <a href="https://discord.gg/E46X4Sgp" target="_blank" class="btn">JOIN BTPOKER DISCORD – PUBLIC LOBBY</a>
 
     <footer>
-      Join the club – DM me on Discord or email BTCPoker@duck.com<br>
-      Pay with BTC • Cash App • PayPal • Zelle • Apple Cash
+      Serious players only • All payments legit • Contact btcpoker@duck.com for private access<br>
+      Join the club – real games, real stakes
     </footer>
   </div>
 </body>
