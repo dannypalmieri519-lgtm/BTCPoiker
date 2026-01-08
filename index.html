@@ -3,139 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BTCPoker | $20-$50/hr Coaching + $10 eBook + Tips</title>
+  <title>BTCPoker | Poker Club & Last Longer Bets</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Bebas+Neue&display=swap');
 
-    body{margin:0;min-height:100vh;background:url('https://images.unsplash.com/photo-1544511912-4a7f9c9f9d2d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')center/cover fixed,url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')center/cover fixed,#0a001a;color:#ffd700;font-family:'Bebas Neue',cursive;text-align:center;display:flex;align-items:center;justify-content:center;}
-    .container{background:rgba(10,5,30,0.95);padding:60px 30px;border-radius:25px;box-shadow:0 0 60px rgba(255,215,0,0.8),inset 0 0 40px rgba(255,0,0,0.4);max-width:1100px;border:5px solid #ffd700;overflow:hidden;}
-    h1{font-family:'Orbitron',sans-serif;font-size:7rem;margin:0 0 10px;text-shadow:0 0 40px #ff0000,0 0 80px #ffd700;letter-spacing:8px;}
-    .tagline{font-size:2.5rem;margin:15px 0 50px;text-shadow:0 0 20px #ffd700;}
-    .levels{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin:60px 0;}
-    .level{background:linear-gradient(135deg,#1a001a,#000);padding:40px 30px;border-radius:20px;width:320px;border:4px solid #ffd700;box-shadow:0 0 40px rgba(255,215,0,0.7);transition:all .4s;cursor:pointer;}
-    .level:hover{transform:translateY(-25px) scale(1.08);box-shadow:0 0 80px #ffd700,0 0 100px #ff0000;}
-    .price{font-size:5rem;color:#ffd700;font-weight:bold;margin:20px 0;text-shadow:0 0 20px #ff0000;}
-    .btn{background:#5865F2;color:white;padding:20px 50px;font-size:2.5rem;border-radius:15px;text-decoration:none;display:inline-block;margin:30px 0 10px;box-shadow:0 0 40px #5865F2;transition:all .3s;}
-    .ebook{background:#ff0066;box-shadow:0 0 50px #ff0066;border:4px solid #ffd700;}
-    .yt{background:#c70000;box-shadow:0 0 60px #ff0000;border:6px solid #ffd700;animation:glow 2s infinite alternate;}
-    footer{margin-top:50px;font-size:1.5rem;opacity:0.9;}
-
-    /* TIP JAR */
-    .tipjar{background:rgba(0,0,0,0.8);padding:50px;border:5px solid #ffd700;border-radius:25px;box-shadow:0 0 80px #ffd700;margin:60px auto;max-width:1000px;}
-    .tipbtn{display:inline-block;margin:15px;padding:20px 40px;font-size:2.2rem;border-radius:15px;color:white;text-decoration:none;min-width:200px;}
-    .paypal{background:#0070ba;box-shadow:0 0 40px #0070ba;}
-    .cashapp{background:#00d632;box-shadow:0 0 40px #00d632;}
-    .zelle{background:#6b00b3;box-shadow:0 0 40px #6b00b3;}
-    .btc{background:#f7931a;box-shadow:0 0 40px #f7931a;}
-
-    @keyframes glow{from{box-shadow:0 0 50px #ff0000,0 0 80px #ffd700;}to{box-shadow:0 0 70px #ff0000,0 0 120px #ffd700;}}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.stockcake.com/public/8/b/e/8be44e87-3071-436b-b156-b43b43be3439_large/poker-night-intensity-stockcake.jpg') center/cover no-repeat fixed;
+      color: #ffd700;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(10, 5, 30, 0.85);
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 50px rgba(255, 215, 0, 0.7), inset 0 0 30px rgba(0, 0, 0, 0.5);
+      max-width: 900px;
+      border: 4px solid #ffd700;
+      position: relative;
+      overflow: hidden;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 6rem;
+      margin: 0 0 20px;
+      text-shadow: 0 0 30px #ff0000, 0 0 60px #ffd700;
+      letter-spacing: 6px;
+    }
+    p { font-size: 2rem; margin: 20px 0; text-shadow: 0 0 10px #ffd700; }
+    .btn {
+      background: #ff0000;
+      color: white;
+      padding: 15px 40px;
+      font-size: 2.5rem;
+      border-radius: 15px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 30px 0;
+      box-shadow: 0 0 30px #ff0000;
+      transition: all 0.3s;
+      border: 3px solid #ffd700;
+    }
+    .btn:hover { transform: scale(1.05); box-shadow: 0 0 50px #ff0000; }
+    .subscribe-btn { background: #FF0000; box-shadow: 0 0 30px #FF0000; }
+    .tipjar { background: rgba(0,0,0,0.8); padding: 40px; border: 4px solid #ffd700; border-radius: 20px; margin: 50px 0; }
+    .tipbtn { display: inline-block; margin: 10px; padding: 15px 30px; font-size: 2rem; border-radius: 10px; color: white; text-decoration: none; }
+    .paypal { background: #0070ba; box-shadow: 0 0 20px #0070ba; }
+    .cashapp { background: #00d632; box-shadow: 0 0 20px #00d632; }
+    .zelle { background: #6b00b3; box-shadow: 0 0 20px #6b00b3; }
+    .btc { background: #f7931a; box-shadow: 0 0 20px #f7931a; }
+    table { width: 100%; margin: 30px 0; border-collapse: collapse; }
+    th, td { padding: 15px; border: 2px solid #ffd700; font-size: 1.8rem; }
+    th { background: rgba(0,0,0,0.8); color: #ffd700; }
+    td { background: rgba(0,0,0,0.6); }
+    footer { margin-top: 50px; font-size: 1.6rem; opacity: 0.9; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>BTCPoker</h1>
-    <p class="tagline">Private 1-on-1 Coaching • $10 eBook • Live Big Plays</p>
+    <p>The Cozy Poker Club for Real Players – Join the Action!</p>
 
-    <div class="levels">
-      <div class="level"><h3 style="font-size:3.5rem;margin:0;">BEGINNER</h3><div class="price">$20/hr</div><p style="font-size:1.8rem;">Just starting out</p><a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN DISCORD & BOOK</a></div>
-      <div class="level"><h3 style="font-size:3.5rem;margin:0;">INTERMEDIATE</h3><div class="price">$30/hr</div><p style="font-size:1.8rem;">Beat regulars</p><a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN DISCORD & BOOK</a></div>
-      <div class="level"><h3 style="font-size:3.5rem;margin:0;">ADVANCED/PRO</h3><div class="price">$50/hr</div><p style="font-size:1.8rem;">GTO • Solvers • Crushing</p><a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN DISCORD & BOOK</a></div>
+    <!-- $2000 ON RED -->
+    <a href="https://youtu.be/JunIDbzPKbI" target="_blank" class="btn">WATCH $2000 ON RED – HIGH STAKES ROULETTE</a>
+
+    <!-- YOUTUBE SUBSCRIBE -->
+    <a href="https://www.youtube.com/channel/UCOW1XggOKlPBBArvwPN0CcA?sub_confirmation=1" target="_blank" class="btn subscribe-btn">SUBSCRIBE TO MY YOUTUBE CHANNEL – BRONXHUSTLA519</a>
+    <p>Get the latest poker tips, live sessions, and club updates!</p>
+
+    <!-- LAST LONGER BET SIGN UP LIST -->
+    <div style="background: rgba(0,0,0,0.8); padding: 40px; border: 4px solid #ffd700; border-radius: 20px; margin: 50px 0;">
+      <p style="font-size: 4rem; margin: 0 0 20px; color: #ffd700; text-shadow: 0 0 30px #ff0000;">LAST LONGER BET TOURNAMENT SIGN UP</p>
+      <p style="font-size: 2.2rem; margin: 0 0 30px;">$10 Fee for First Entry – Pay via Bitcoin or Tip Jar Below<br>Be familiar with Bitcoin to join. Club: BTCPoker</p>
+      <table>
+        <tr>
+          <th>Username</th>
+          <th>Status</th>
+        </tr>
+        <tr><td>AceHighKing</td><td>Paid & Entered</td></tr>
+        <tr><td>RiverRat42</td><td>Paid & Entered</td></tr>
+        <tr><td>FlushDrawPro</td><td>Paid & Entered</td></tr>
+        <tr><td>BluffMaster99</td><td>Paid & Entered</td></tr>
+        <tr><td>[Your Username]</td><td>Pending – Sign Up Below</td></tr>
+      </table>
+      <a href="mailto:btcpoker@duck.com?subject=BTCPoker Last Longer Sign Up&body=My Username: [Your Username]%0A%0AI have paid the $10 fee (TXID or confirmation): [Paste Here]%0A%0AEmail sent and pending entry to the club group chat. [Check Box: Yes]" class="btn">SIGN UP – EMAIL BTCPoker@duck.com</a>
+      <p style="font-size: 1.8rem; margin-top: 20px;">Click above to email and sign up. Include your payment confirmation. Check the box in the email for group chat entry.</p>
     </div>
 
-    <p style="font-size:2.5rem;margin:50px 0;">Baccarat & Blackjack = $20/hr — just DM me!</p>
-
-    <!-- E-BOOK -->
-    <a href="https://dannypalmieri.gumroad.com/l/qndhcg" target="_blank" class="ebook btn">BUY THE POKER E-BOOK → $10</a>
-    <p style="font-size:2.2rem;color:#ffd700;">Instant download • Card or BTC</p>
-
-    <!-- $2000 ROULETTE YOUTUBE -->
-    <div style="padding:40px;background:rgba(0,0,0,0.7);border:5px solid #ffd700;border-radius:25px;box-shadow:0 0 60px #ff0000,0 0 80px #ffd700;margin:60px auto;max-width:900px;">
-      <p style="font-size:4.5rem;margin:0;color:#ffd700;text-shadow:0 0 30px #ff0000;letter-spacing:4px;">$2,000 ON RED LIVE!</p>
-      <p style="font-size:3rem;margin:15px 0 30px;color:#fff;">Watch me go all-in right now</p>
-      <a href="https://youtu.be/JunIDbzPKbI" target="_blank" class="yt btn">WATCH THE $2,000 SPIN</a>
-      <p style="font-size:2.8rem;margin:30px 0 10px;color:#ffd700;">Smash SUBSCRIBE while you watch!</p>
-    </div>
-
-    <!-- PLAY WITH ME HEADS-UP -->
-<div style="text-align:center; padding:50px; background:rgba(20,0,0,0.95); border:7px double #ffd700; border-radius:30px; 
-            box-shadow:0 0 90px #ff0000, 0 0 120px #ffd700; max-width:1000px; margin:70px auto;
-            animation:pulse 2s infinite;">
-  <p style="font-size:5.5rem; margin:0; color:#ffd700; text-shadow:0 0 40px #ff0000; letter-spacing:6px; font-family:'Orbitron',sans-serif;">
-    HEADS-UP WITH DANNY
-  </p>
-  <p style="font-size:3.2rem; color:#fff; margin:20px 0;">
-    Jump in the GTO Wizard ring with me RIGHT NOW • Stakes of your choice
-  </p>
-
-  <a href="https://play.gtowizard.com/game/Uhf49M" target="_blank"
-     style="background:#c70000;color:white;padding:32px 100px;font-size:4.2rem;border-radius:22px;
-            text-decoration:none;display:inline-block;box-shadow:0 0 70px #ff0000;
-            font-family:'Bebas Neue',cursive;letter-spacing:5px;border:7px solid #ffd700;
-            animation:glow 1.6s infinite alternate;">
-    PLAY ME HEADS-UP NOW
-  </a>
-
-  <p style="font-size:2.4rem; color:#ffd700; margin:30px 0 0;">
-    Click above → pick your stake → let’s run it ♠️₿
-  </p>
-</div>
-
-<style>
-@keyframes pulse {
-  0%   { transform:scale(1); }
-  50%  { transform:scale(1.03); }
-  100% { transform:scale(1); }
-}
-</style>
-
-     <!-- LIVE POKER WAITLIST SUBSCRIPTION -->
-<div style="text-align:center; padding:50px; background:linear-gradient(135deg, rgba(0,0,0,0.9), rgba(139,0,0,0.8)); border:6px double #ffd700; border-radius:30px; box-shadow:0 0 80px #ff0000, inset 0 0 40px rgba(255,215,0,0.3); max-width:1000px; margin:60px auto; animation:spinGlow 4s ease-in-out infinite alternate;">
-  <p style="font-size:5rem; margin:0; color:#ffd700; text-shadow:0 0 40px #ff0000; letter-spacing:5px; font-family:'Orbitron',sans-serif;">
-    LIVE BTC POKER WAITLIST
-  </p>
-  <p style="font-size:3rem; color:#fff; margin:20px 0; text-shadow:0 0 20px #ffd700;">
-    $5/month • Priority seats • Instant notifications • Groupchat + Tournaments + GTO Wizard
-  </p>
-  <p style="font-size:2.2rem; color:#ffd700; margin:0 0 30px;">
-    Lock in your spot before games fill up – NYC/NJ action every week!
-  </p>
-
-  <a href="https://dannypalmieri.gumroad.com/l/chucb" target="_blank"
-     style="background:#c70000;color:white;padding:28px 90px;font-size:3.8rem;border-radius:20px;
-            text-decoration:none;display:inline-block;box-shadow:0 0 60px #ff0000;
-            font-family:'Bebas Neue',cursive;letter-spacing:4px;border:6px solid #ffd700;
-            animation:glow 1.5s infinite alternate;">
-    SUBSCRIBE $5/MONTH → GET IN THE ROTATION
-  </a>
-
-  <p style="font-size:2rem; color:#fff; margin:30px 0 0;">
-    Cancel anytime • First to know when seats drop
-  </p>
-</div>
-
-<style>
-@keyframes spinGlow {
-  0% { transform: rotate(-2deg); box-shadow:0 0 80px #ff0000, inset 0 0 40px rgba(255,215,0,0.3); }
-  100% { transform: rotate(2deg); box-shadow:0 0 100px #ffd700, inset 0 0 60px rgba(255,215,0,0.5); }
-}
-</style>
-
-    <!-- TIP JAR – ALL YOUR METHODS -->
-    <div class="tipjar">
-      <p style="font-size:4.5rem;margin:0;color:#ffd700;text-shadow:0 0 30px #ff0000;">SUPPORT THE GRIND – TIP JAR</p>
-      <p style="font-size:2.6rem;color:#fff;margin:20px 0;">Love the plays? Throw some chips my way — every dollar goes to bigger action!</p>
-
+    <!-- TIP JAR -->
+    <div style="background: rgba(0,0,0,0.8); padding: 40px; border: 4px solid #ffd700; border-radius: 20px; margin: 50px 0;">
+      <p style="font-size: 4rem; margin: 0 0 20px; color: #ffd700; text-shadow: 0 0 30px #ff0000;">TIP JAR – SUPPORT THE CLUB</p>
       <a href="https://www.paypal.me/dannyp519" target="_blank" class="tipbtn paypal">PayPal</a>
       <a href="https://cash.app/$BTCPoker" target="_blank" class="tipbtn cashapp">Cash App $BTCPoker</a>
-      <a href="mailto:dannypalmieri519@gmail.com?subject=Zelle/Apple%20Cash%20Tip" class="tipbtn zelle">Zelle / Apple Cash<br>646-260-2946</a>
+      <a href="mailto:dannypalmieri519@gmail.com?subject=Zelle/Apple%20Tip" class="tipbtn zelle">Zelle / Apple Cash 646-260-2946</a>
       <a href="bitcoin:bc1q7a75vkqkcwqh7muvdy88dc4fwljm804kq3zdc7" class="tipbtn btc">Bitcoin</a>
     </div>
 
     <a href="https://discord.gg/2bAhrTqw" target="_blank" class="btn">JOIN BTCPoker DISCORD SERVER</a>
 
     <footer>
-      Click any button → Join the server → DM me to book<br>
-      Pay with BTC • Cash App • Venmo • Zelle • PayPal • Apple Cash • First paid = first served
+      Join the club – DM me on Discord or email BTCPoker@duck.com<br>
+      Pay with BTC • Cash App • PayPal • Zelle • Apple Cash
     </footer>
   </div>
 </body>
